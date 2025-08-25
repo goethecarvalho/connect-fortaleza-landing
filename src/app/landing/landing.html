@@ -1,0 +1,39 @@
+<app-header></app-header>
+
+<main class="landing-content">
+  <div class="container">
+    <h1>Connect Fortaleza</h1>
+    <form (ngSubmit)="enviarWhatsApp()" #form="ngForm">
+      <input type="text" name="nome" [(ngModel)]="formData.nome" placeholder="Nome" required />
+      <select name="localidade" [(ngModel)]="formData.localidade" required class="form-control">
+        <option value="" disabled selected>Selecione a localidade</option>
+        <option value="Fortaleza">Fortaleza</option>
+        <option value="Região Metropolitana">Região Metropolitana</option>
+        <option value="Interior do Estado">Interior do Estado</option>
+      </select>
+      <input type="text" name="whatsapp" [(ngModel)]="formData.whatsapp" placeholder="WhatsApp" required />
+      <select name="valorConta" [(ngModel)]="formData.valorConta" required class="form-control">
+        <option value="" disabled selected>Selecione o valor médio da conta</option>
+        <option value="Acima 400">Acima de R$ 400,00</option>
+        <option value="600 - 800">R$600,00 - R$800,00</option>
+        <option value="800 - 1000">R$800,00 - R$1000,00</option>
+        <option value="Acima de 1000">Acima de R$1000,00</option>
+      </select>
+      <button type="submit">Enviar para WhatsApp</button>
+    </form>
+  </div>
+
+  <!-- Seção de Benefícios -->
+  <app-beneficios></app-beneficios>
+
+  <!-- Seção de Contato -->
+  <!--<section id="contato" class="contato-section">
+    <div class="container">
+      <h2>Fale Conosco</h2>
+      <p>Entre em contato para saber mais sobre energia solar.</p>
+      <a href="https://wa.me/55SEUNUMERO" target="_blank">📱 WhatsApp</a>
+    </div>
+  </section>-->
+</main>
+
+<app-footer></app-footer>

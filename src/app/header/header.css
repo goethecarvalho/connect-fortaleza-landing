@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #003366; /* Azul escuro da logo */
+  padding: 15px 25px;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.logo {
+  height: 50px;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white; /* Amarelo solar */
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: white;
+}

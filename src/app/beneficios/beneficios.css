@@ -1,0 +1,10 @@
+.beneficios-section:target {
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+input:focus {
+  border-color: #FFD700;
+  box-shadow: 0 0 5px rgba(255, 215, 0, 0.6);
+  outline: none;
+}

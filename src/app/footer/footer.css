@@ -1,0 +1,8 @@
+.footer {
+  background-color: #003366; /* Azul escuro da logo */
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
