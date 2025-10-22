@@ -46,3 +46,16 @@ select.form-control {
   box-sizing: border-box;
   margin-bottom: 16px;
 }
+
+.titulo-formulario {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0a2f5a; /* Azul institucional */
+  margin-bottom: 0.5rem;
+}
+
+.subtitulo-formulario {
+  font-size: 1.05rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
