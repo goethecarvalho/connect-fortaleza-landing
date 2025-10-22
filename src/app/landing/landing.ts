@@ -30,8 +30,8 @@ export class LandingComponent {
   };
 
   enviarWhatsApp() {
-    const numeroEmpresa1 = '5585999964078';
-    const numeroEmpresa2 = '5585986441000'; // número alternativo
+    const numeroEmpresa1 = '5585986441000';
+    const numeroEmpresa2 = '5585991172199'; // número alternativo
     const numeroLimpo = this.formData.whatsapp.replace(/\D/g, '');
 
     // ✅ Define qual número usar conforme o valor da conta
