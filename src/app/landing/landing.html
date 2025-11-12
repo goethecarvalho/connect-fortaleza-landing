@@ -26,7 +26,8 @@
         <option value="Indústria">Indústria</option>
         <option value="Propredade Rural">Propredade Rural</option>
       </select>
-      <input type="text" name="whatsapp" [(ngModel)]="formData.whatsapp" placeholder="WhatsApp" required mask="(00) 00000-0000" />
+      <input type="text" name="whatsapp" [(ngModel)]="formData.whatsapp" placeholder="WhatsApp" required
+        mask="(00) 00000-0000" />
       <select name="valorConta" [(ngModel)]="formData.valorConta" required class="form-control">
         <option value="" disabled selected>Selecione o valor médio da conta</option>
         <option value="Até 400">Até R$ 400,00</option>
@@ -34,6 +35,12 @@
         <option value="600 - 800">R$600,00 - R$800,00</option>
         <option value="800 - 1000">R$800,00 - R$1000,00</option>
         <option value="Acima de 1000">Acima de R$1000,00</option>
+      </select>
+      <select name="recurso" [(ngModel)]="formData.tipoRecurso" required class="form-control">
+        <option value="" disabled selected>Qual o tipo de recurso</option>
+        <option value="Próprio">Próprio</option>
+        <option value="Financiamento">Financiamento</option>
+        <option value="Outro">Outro</option>
       </select>
       <button type="submit">Enviar para WhatsApp</button>
     </form>
